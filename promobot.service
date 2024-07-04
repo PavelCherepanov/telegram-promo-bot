@@ -1,0 +1,12 @@
+[Unit]
+Description=Promo Telegram Bot
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/root/tgPromoBot/venv/bin/python /root/tgPromoBot/bot.py
+WorkingDirectory=/root/tgPromoBot
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
